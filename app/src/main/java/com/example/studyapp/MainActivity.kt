@@ -12,11 +12,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        this.title = "Study app"
 
         val kotlinButton = findViewById<Button>(R.id.kotlen_button)
         val javaButton = findViewById<Button>(R.id.java_button)
 
         kotlinButton.setOnClickListener{
+
             startActivity(Intent(this, KotlinScreen::class.java))
         }
 

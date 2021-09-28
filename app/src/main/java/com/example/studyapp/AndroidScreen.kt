@@ -9,6 +9,7 @@ class AndroidScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_android_screen)
+        this.title = "Android Review"
 
         var myRV = findViewById<RecyclerView>(R.id.rvAndroid)
         myRV.adapter = AndroidScreenRecycler()
